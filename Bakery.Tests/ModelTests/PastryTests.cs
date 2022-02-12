@@ -34,5 +34,12 @@ namespace Bakery.Tests
       Pastry newPastry = new Pastry(2, 6);
       Assert.AreEqual(0, newPastry.Total);
     }
+
+    [TestMethod]
+    public void CalculateTotal_CalculatePastryTotal_Int()
+    {
+      Pastry newPastry = new Pastry(2, 6);
+      Assert.AreEqual(10, newPastry.Total);
+    }
   }
 }
