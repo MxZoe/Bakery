@@ -5,6 +5,10 @@ namespace Bakery.Models
 {
   public class Pastry
   {
-    // properties, constructors, methods, etc. go here
+    public int Price {get; set;}
+    public Pastry(int price)
+    {
+      Price = price;
+    }
   }
 }
