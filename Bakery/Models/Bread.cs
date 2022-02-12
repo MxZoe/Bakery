@@ -7,9 +7,12 @@ namespace Bakery.Models
   {
     public int Price {get; set;}
 
-    public Bread (int price)
+    public int Quantity {get; set;}
+
+    public Bread (int price, int quantity)
     {
       Price = price;
+      Quantity = quantity;
     }
   }
 }
