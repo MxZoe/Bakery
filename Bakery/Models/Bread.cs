@@ -13,7 +13,22 @@ namespace Bakery.Models
     {
       Price = price;
       Quantity = quantity;
-      Total = Price * Quantity;
+      CalculateTotal();
+    }
+
+    public void CalculateTotal()
+    {
+      for(int i = 1; i <= Quantity; i++)
+      {
+        if(i % 3 == 0)
+        {
+          Total += 0;
+        } 
+        else
+        {
+          Total += Price;
+        }
+      }
     }
   }
 }

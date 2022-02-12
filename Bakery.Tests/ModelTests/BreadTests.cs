@@ -31,6 +31,12 @@ namespace Bakery.Tests
     public void BreadConstructor_AssignTotalToBread_Int()
     {
       Bread newBread = new Bread(5, 3);
+      Assert.AreEqual(10, newBread.Total);
+    }
+
+    public void CalculateTotal_AssignValueToToal_Int()
+    {
+      Bread newBread = new Bread(5, 4);
       Assert.AreEqual(15, newBread.Total);
     }
   }
