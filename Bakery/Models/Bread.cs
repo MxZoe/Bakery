@@ -9,6 +9,8 @@ namespace Bakery.Models
     public int Quantity {get; set;}
     public int Total {get; set;}
 
+
+
     public Bread (int price, int quantity)
     {
       Price = price;
