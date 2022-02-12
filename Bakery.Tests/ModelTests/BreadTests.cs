@@ -15,17 +15,23 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void BreadPrice_AssignPriceToBread_Int()
+    public void BreadConstructor_AssignPriceToBread_Int()
     {
       Bread newBread = new Bread(5, 3);
       Assert.AreEqual(5, newBread.Price);
     }
 
     [TestMethod]
-    public void BreadQuantity_AssignQuantityToBread_Int()
+    public void BreadConstructor_AssignQuantityToBread_Int()
     {
       Bread newBread = new Bread(5, 3);
       Assert.AreEqual(3, newBread.Quantity);
+    }
+     [TestMethod]
+    public void BreadConstructor_AssignTotalToBread_Int()
+    {
+      Bread newBread = new Bread(5, 3);
+      Assert.AreEqual(15, newBread.Total);
     }
   }
 }
