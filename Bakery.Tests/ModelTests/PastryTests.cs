@@ -32,7 +32,7 @@ namespace Bakery.Tests
     public void PastryConstructor_SetTotalInPastryConstructor_Int()
     {
       Pastry newPastry = new Pastry(2, 6);
-      Assert.AreEqual(0, newPastry.Total);
+      Assert.AreEqual(10, newPastry.Total);
     }
 
     [TestMethod]
